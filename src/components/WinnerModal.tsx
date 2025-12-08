@@ -5,10 +5,11 @@ import { X, ExternalLink, Award } from 'lucide-react';
 
 interface WinnerModalProps {
   category: AwardCategory | null;
+  clickPosition: { x: number; y: number } | null;
   onClose: () => void;
 }
 
-const WinnerModal: React.FC<WinnerModalProps> = ({ category, onClose }) => {
+const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onClose }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -26,16 +27,28 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, onClose }) => {
 
   const { winner } = category;
 
+  const modalStyle = clickPosition
+    ? {
+        position: 'fixed' as const,
+        left: `${clickPosition.x}px`,
+        top: `${clickPosition.y}px`,
+        transformOrigin: 'top left',
+      }
+    : {};
+
   return (
-    <div className={`fixed inset-0 z-50 flex items-start justify-center p-4 sm:p-6 pt-12 sm:pt-16 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`fixed inset-0 z-50 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Backdrop */}
-      <div 
+      <div
         className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
         onClick={onClose}
       ></div>
 
       {/* Modal Content */}
-      <div className={`relative bg-white w-full max-w-2xl max-h-[90vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 ${isVisible ? 'scale-100 translate-y-0' : 'scale-95 translate-y-8'}`}>
+      <div
+        style={modalStyle}
+        className={`absolute bg-white w-full max-w-2xl max-h-[90vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 ${isVisible ? 'scale-150' : 'scale-100'}`}
+      >
         
         {/* Header */}
         <div className="relative bg-gradient-to-r from-brand-dark to-blue-900 p-8 text-white flex-shrink-0">

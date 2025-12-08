@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 
 interface AwardCardProps {
   category: AwardCategory;
-  onClick: () => void;
+  onClick: (e: React.MouseEvent<HTMLDivElement>) => void;
 }
 
 const AwardCard: React.FC<AwardCardProps> = ({ category, onClick }) => {

@@ -11,6 +11,7 @@ const App: React.FC = () => {
     QUARTER_DATA.find(q => q.isActive)?.id || QUARTER_DATA[0].id
   );
   const [selectedCategory, setSelectedCategory] = useState<AwardCategory | null>(null);
+  const [clickPosition, setClickPosition] = useState<{ x: number; y: number } | null>(null);
   const [activeSegment, setActiveSegment] = useState<CollateralSegment | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
 
@@ -126,10 +127,14 @@ const App: React.FC = () => {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-16 gap-x-8 pb-20">
           {filteredCategories.map((category) => (
-            <AwardCard 
-              key={category.id} 
+            <AwardCard
+              key={category.id}
               category={category}
-              onClick={() => setSelectedCategory(category)}
+              onClick={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                setClickPosition({ x: rect.left, y: rect.top });
+                setSelectedCategory(category);
+              }}
             />
           ))}
           
@@ -157,9 +162,13 @@ const App: React.FC = () => {
       </footer>
 
       {/* Modal Overlay */}
-      <WinnerModal 
-        category={selectedCategory} 
-        onClose={() => setSelectedCategory(null)} 
+      <WinnerModal
+        category={selectedCategory}
+        clickPosition={clickPosition}
+        onClose={() => {
+          setSelectedCategory(null);
+          setClickPosition(null);
+        }}
       />
     </div>
   );
