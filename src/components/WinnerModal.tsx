@@ -27,7 +27,7 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, onClose }) => {
   const { winner } = category;
 
   return (
-    <div className={`fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`fixed inset-0 z-50 flex items-start justify-center p-4 sm:p-6 pt-12 sm:pt-16 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Backdrop */}
       <div 
         className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
