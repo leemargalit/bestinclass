@@ -37,7 +37,7 @@ const App: React.FC = () => {
   }, [activeQuarter.categories, activeSegment, searchQuery]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 font-sans text-slate-900">
+    <div className="w-full min-h-screen flex flex-col bg-slate-50 font-sans text-slate-900">
       
       {/* Hero Section */}
       <header className="relative bg-brand-dark overflow-hidden">
@@ -62,13 +62,13 @@ const App: React.FC = () => {
             A centralized hub of leadership-validated excellence - setting global standards, accelerating onboarding, and celebrating top performance across Similarweb.
           </p>
 
-          <a 
+          <a
             href={APP_CONFIG.submissionLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-brand-accent hover:bg-orange-600 text-white font-bold rounded-lg shadow-xl shadow-orange-900/20 transition-all transform hover:-translate-y-1"
           >
-            Q4 Submission Form
+            Q1 2026 Submission Form
           </a>
         </div>
       </header>

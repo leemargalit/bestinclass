@@ -1,7 +1,7 @@
 import { QuarterData } from './types';
 
 export const APP_CONFIG = {
-  submissionLink: "https://docs.google.com/forms/d/e/1FAIpQLSevgpYnVSAyWyviIKJNg_2fQrHHLlYPNO6HM-m0Ij967yY11w/viewform?usp=header",
+  submissionLink: "https://docs.google.com/forms/d/e/1FAIpQLSeVvqH6d0UQDVWJMw3IiZ4Ef9ho5ysEgZvnKF7Je1t4K7yGIQ/viewform?usp=header",
 };
 
 export const QUARTER_DATA: QuarterData[] = [
