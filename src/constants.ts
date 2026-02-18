@@ -546,6 +546,19 @@ export const QUARTER_DATA: QuarterData[] = [
         iconName: 'Mic',
         colorTheme: 'purple',
         segments: ['sales'],
+        winner: {
+          name: 'Aaron Wong',
+          links: [
+            { label: 'View Call Recording', url: 'https://chorus.ai/meeting/A4F6B411A1B245829FF0DC92D3F37C93?ro_company_id=64605652' }
+          ],
+          descriptionPoints: [
+            'Did not dismiss Profound or compete on feature checklists.',
+            'Calmly reframed the conversation around data truth, methodology, and business outcomes.',
+            'Acknowledged objection about prompt tracking and citation coverage.',
+            'Redirected to Similarweb\'s core advantage: owning first-party clickstream data.',
+            'Tied AI visibility to real traffic, zero-click impact, and competitive share shifts.'
+          ]
+        }
       },
       {
         id: 'q4-c2',
@@ -553,6 +566,19 @@ export const QUARTER_DATA: QuarterData[] = [
         iconName: 'BarChart',
         colorTheme: 'purple',
         segments: ['insights'],
+        winner: {
+          name: 'Marev Dediashvili',
+          links: [
+            { label: 'View Call Recording', url: 'https://hello.chorus.ai/listen?guid=7c0133118e264d9c84310f64d4a9de9f' }
+          ],
+          descriptionPoints: [
+            'Clear winner with excellent approach to data explanation.',
+            'Asked questions first before explaining - consultative approach.',
+            'Explained methodology simply and effectively.',
+            'Engaged data ambassador demonstrating commitment to the program.',
+            'Excellent proof of what a serious data ambassador program yields.'
+          ]
+        }
       },
       {
         id: 'q4-c3',
@@ -560,6 +586,22 @@ export const QUARTER_DATA: QuarterData[] = [
         iconName: 'Presentation',
         colorTheme: 'purple',
         segments: ['demo'],
+        winner: {
+          name: 'Esther Rogers',
+          links: [
+            { label: 'View Demo Recording', url: 'https://drive.google.com/file/d/1x-oC1O-xYysAjhGz_rT3-QksDop22B9w/view?usp=sharing' }
+          ],
+          descriptionPoints: [
+            'Exceptional storytelling and value-selling approach.',
+            'Positioned App Intel holistically with Web Intel at the very beginning.',
+            'Hooked audience from the start with strong narrative.',
+            'Objection handling on data methodology was handled expertly.',
+            'Positioned roadmap features effectively.',
+            'Presented latest platform innovations and AI capabilities.',
+            'Connected usage/stickiness to reviews seamlessly.',
+            'Tied usage/sentiment insights to SDK implementations.'
+          ]
+        }
       },
       {
         id: 'q4-c4',
@@ -567,6 +609,22 @@ export const QUARTER_DATA: QuarterData[] = [
         iconName: 'Target',
         colorTheme: 'purple',
         segments: ['shopper', 'demo'],
+        winner: {
+          name: 'Esther Rogers & Oren',
+          links: [
+            { label: 'View Call Recording', url: 'https://hello.chorus.ai/listen?guid=3d6a443ac0f84b138c90ca3173724e48' }
+          ],
+          descriptionPoints: [
+            'Excellent teamwork between Oren and Esther.',
+            'Both came across as knowledgeable and action-oriented.',
+            'Clear responsibilities: Oren guided call and commercial questions, Esther executed deep analysis.',
+            'Outstanding shopper demo with real insights personalized to customer.',
+            'All insights connected back to real actions customer could take.',
+            'Esther adapted messaging and insights in-flight based on customer feedback.',
+            'Oren handled price and packaging challenges skillfully.',
+            'Successfully guided customer toward annual/2-year contracts despite push for 1-month test.'
+          ]
+        }
       },
       {
         id: 'q4-c5',
@@ -574,6 +632,11 @@ export const QUARTER_DATA: QuarterData[] = [
         iconName: 'Zap',
         colorTheme: 'purple',
         segments: ['demo', 'ai'],
+        winner: {
+          name: 'Shiran Maimon',
+          links: [],
+          descriptionPoints: []
+        }
       },
       {
         id: 'q4-c6',
@@ -581,6 +644,17 @@ export const QUARTER_DATA: QuarterData[] = [
         iconName: 'Search',
         colorTheme: 'purple',
         segments: ['ai', 'sales'],
+        winner: {
+          name: 'Marev Dediashvili',
+          links: [
+            { label: 'View Document', url: 'https://docs.google.com/document/d/1_8uNzw9uBEoJl7DLHf3FmMsLHi2m_EBdn3bB4mSgKrY/edit?usp=sharing&urp=gmail_link' }
+          ],
+          descriptionPoints: [
+            'Very detailed and comprehensive approach.',
+            'Included a lot of great insights.',
+            'Leveraged AI to create compelling pitch materials.'
+          ]
+        }
       },
       {
         id: 'q4-c7',
@@ -595,6 +669,19 @@ export const QUARTER_DATA: QuarterData[] = [
         iconName: 'Zap',
         colorTheme: 'purple',
         segments: ['demo'],
+        winner: {
+          name: 'Delaney Macdonald',
+          links: [
+            { label: 'View Integration Template', url: 'https://docs.google.com/spreadsheets/d/1KxBI-wABxsDZSkDLHbOOnRaPMyOKQQQySvAIuU1m2_M/edit?usp=sharing' }
+          ],
+          descriptionPoints: [
+            'Saw a problem and took initiative to fix it.',
+            'Used our connector to build a custom view exactly matching customer needs.',
+            'Created a simple Google Sheet solution with major impact.',
+            'Customer now uses it regularly in their workflow.',
+            'Demonstrated how to create lasting value through thoughtful problem-solving.'
+          ]
+        }
       },
       {
         id: 'q4-c9',
@@ -602,6 +689,19 @@ export const QUARTER_DATA: QuarterData[] = [
         iconName: 'Users',
         colorTheme: 'purple',
         segments: ['sales'],
+        winner: {
+          name: 'Eni Doka',
+          links: [
+            { label: 'View Account Record', url: 'https://similarweb.lightning.force.com/lightning/r/Account/001QB00000ctSZ1YAM/view' }
+          ],
+          descriptionPoints: [
+            'Excellent multi-threading best practice.',
+            'Referenced past relationships to create familiarity and credibility.',
+            'Leveraged prior work with Alison\'s former group within Amazon.',
+            'Strong example of multi-thread best practices in action.',
+            'Should be highlighted as a best practice for the broader team.'
+          ]
+        }
       },
       {
         id: 'q4-c10',
@@ -609,6 +709,31 @@ export const QUARTER_DATA: QuarterData[] = [
         iconName: 'Trophy',
         colorTheme: 'purple',
         segments: ['demo', 'client-relationship', 'insights', 'sales', 'ai', 'si', 'shopper'],
+        winner: {
+          name: 'Priyesh Patel',
+          links: [
+            { label: 'View Presentation', url: 'https://docs.google.com/presentation/d/16NC8y3Uy2eBKLq5pc_856rBKXWBAC2oU94h6VKKeitA/edit?usp=sharing' },
+            { label: 'View Chorus Call', url: 'https://chorus.ai/meeting/A373AF9D54BF490B8ACA0B6ECA92C49D?start=3310&ro_company_id=11375450' }
+          ],
+          descriptionPoints: [
+            'Strong brand health methodology explanation.',
+            'Clearly articulated how to build brand health scores and recommendations.',
+            'Excellent flow from methodology to customer-specific brand health comparison.',
+            'Positioned peer comparison to validate customer performance and inspire improvement.',
+            'Clear omni-channel strategy recommendations throughout.',
+            'Highly actionable example for GTM organization selling CPG brands.',
+            'Strong visualization and multiple Similarweb datasets utilized.',
+            'Effectively showcased new AI brand visibility features.'
+          ]
+        },
+        runnerUp: {
+          name: 'Jack Sherman & Thomas Verberder',
+          links: [
+            { label: 'Jack Sherman Presentation', url: 'https://docs.google.com/presentation/d/1taP1Ze7f18BVWsHkju_5ueL5QtdrvoxKyzbpirsw-ZY/edit?usp=sharing' },
+            { label: 'Thomas Verberder Presentation', url: 'https://drive.google.com/file/d/1WoIr-yPSCptO2KQV5N3ZVOEIbd9Xru9X/view?usp=drive_link' }
+          ],
+          descriptionPoints: []
+        }
       }
     ]
   }

@@ -47,7 +47,7 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
       {/* Modal Content */}
       <div
         style={modalStyle}
-        className={`absolute bg-white w-full max-w-2xl max-h-[90vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 ${isVisible ? 'scale-150' : 'scale-100'}`}
+        className={`absolute bg-white w-96 flex flex-col rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 ${isVisible ? 'scale-150' : 'scale-100'}`}
       >
         
         {/* Header */}
