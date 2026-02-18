@@ -24,8 +24,14 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
 
   const { winner } = category;
 
+  const containerStyle = clickPosition
+    ? {
+        paddingTop: `${clickPosition.y}px`,
+      }
+    : {};
+
   return (
-    <div className={`fixed inset-0 z-50 transition-opacity duration-300 flex items-center justify-center ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+    <div className={`fixed inset-0 z-50 transition-opacity duration-300 flex items-start justify-center overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} style={containerStyle}>
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
