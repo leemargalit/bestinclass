@@ -24,17 +24,8 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
 
   const { winner } = category;
 
-  const modalStyle = clickPosition
-    ? {
-        position: 'fixed' as const,
-        left: `${clickPosition.x}px`,
-        top: `${clickPosition.y}px`,
-        transformOrigin: 'top left',
-      }
-    : {};
-
   return (
-    <div className={`fixed inset-0 z-50 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`fixed inset-0 z-50 transition-opacity duration-300 flex items-center justify-center ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
@@ -43,8 +34,7 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
 
       {/* Modal Content */}
       <div
-        style={modalStyle}
-        className={`absolute bg-white w-96 max-h-[85vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 ${isVisible ? 'scale-150' : 'scale-100'}`}
+        className={`relative bg-white w-96 max-h-[85vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 ${isVisible ? 'scale-100' : 'scale-95'}`}
       >
         
         {/* Header */}
@@ -75,7 +65,7 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
         </div>
 
         {/* Body - Scrollable */}
-        <div className="p-8 overflow-y-auto custom-scrollbar">
+        <div className="flex-1 p-8 overflow-y-auto overflow-x-hidden">
           <div className="prose prose-slate max-w-none">
             <h3 className="text-lg font-semibold text-slate-800 flex items-center gap-2 mb-4">
                Why is it the <span className="text-brand-accent italic">BEST</span>?
