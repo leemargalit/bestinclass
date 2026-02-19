@@ -15,7 +15,10 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
   useEffect(() => {
     if (category) {
       setIsVisible(true);
-      window.scrollTo({ top: 0, behavior: 'auto' });
+      // Calculate scroll position to show second row (approximately 1000px down from the awards grid)
+      const gridStart = window.innerHeight * 0.3;
+      const secondRowOffset = gridStart + 400;
+      window.scrollTo({ top: secondRowOffset, behavior: 'smooth' });
     } else {
       setIsVisible(false);
     }
