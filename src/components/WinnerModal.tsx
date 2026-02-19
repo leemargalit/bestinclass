@@ -15,7 +15,7 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
   useEffect(() => {
     if (category) {
       setIsVisible(true);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'auto' });
     } else {
       setIsVisible(false);
     }
