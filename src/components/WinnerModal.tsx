@@ -26,7 +26,7 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
   const { winner } = category;
 
   return (
-    <div className={`fixed inset-0 z-50 transition-opacity duration-300 flex items-start justify-center pt-8 overflow-y-auto ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+    <div className={`fixed inset-0 z-50 transition-opacity duration-300 flex items-center justify-center overflow-y-auto ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
@@ -35,7 +35,7 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
 
       {/* Modal Content */}
       <div
-        className={`relative bg-white w-96 max-h-[90vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 ${isVisible ? 'scale-100' : 'scale-95'}`}
+        className={`relative bg-white w-full max-w-2xl max-h-[85vh] flex flex-col rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 m-4 ${isVisible ? 'scale-100' : 'scale-95'}`}
       >
         
         {/* Header */}
