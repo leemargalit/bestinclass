@@ -98,14 +98,14 @@ const WinnerModal: React.FC<WinnerModalProps> = ({ category, clickPosition, onCl
                  </h4>
                  <div className="grid gap-3 sm:grid-cols-2">
                    {winner.links.map((link, idx) => (
-                     <a 
+                     <a
                        key={idx}
                        href={link.url}
                        target="_blank"
                        rel="noopener noreferrer"
                        className="flex items-center justify-between p-3 bg-blue-50 hover:bg-blue-100 border border-blue-100 rounded-lg text-blue-700 font-medium transition-colors group"
                      >
-                       <span className="truncate mr-2">{link.label}</span>
+                       <span className="break-words mr-2 text-sm">{link.label}</span>
                        <ExternalLink className="w-4 h-4 opacity-70 group-hover:opacity-100 flex-shrink-0" />
                      </a>
                    ))}
